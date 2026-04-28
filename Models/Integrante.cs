@@ -1,4 +1,4 @@
-public class Integrantes{
+public class Integrante{
     private int DNI;
     private string nombre;
     private DateTime fechaNacimiento;
@@ -6,13 +6,30 @@ public class Integrantes{
     private List<string> listaFamiliares;
     private List<string> listaIntereses;
 
-    public Integrantes(int dni2,DateTime fechaNacimiento2, string foto2, string nombre2, List<string> listaFamiliares2, list<string> listaIntereses2){
-        dni = dni2;
+    public Integrante(int dni2,DateTime fechaNacimiento2, string foto2, string nombre2, List<string> listaFamiliares2, List<string> listaIntereses2){
+        DNI = dni2;
         nombre = nombre2;
         fechaNacimiento = fechaNacimiento2;
         foto = foto2;
         listaFamiliares = listaFamiliares2;
         listaIntereses = listaIntereses;
+    } 
+    public int getDni(){
+        return DNI;
     }
-    
+    public string getNombre(){
+        return nombre;
+    }
+    public DateTime getFechaNacimiento(){
+        return fechaNacimiento;
+    }
+    public string getFoto(){
+        return foto;
+    }
+    public List<string> getListaFamiliares(){
+        return listaFamiliares;
+    }
+    public List<string> getListaIntereses(){
+        return listaIntereses;
+    }
 }

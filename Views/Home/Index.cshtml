@@ -6,3 +6,15 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+ @foreach (var inter in ViewBag.Datos.Values)
+ {
+    <div> 
+        <p>@inter.getNombre()</p>
+        <p>@inter.getDni()</p>
+        <p>@inter.getFechaNacimiento()</p>
+        <img src="@inter.getFoto()" alt="Foto de @inter.getNombre()" />
+        <a href="@Url.Action("infoIntegrante", "Home", new { dni = inter.getDni() })">Ver más</a>
+    </div>
+        
+ }

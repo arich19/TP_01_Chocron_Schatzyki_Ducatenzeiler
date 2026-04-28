@@ -7,7 +7,6 @@ namespace TP_01_Chocron_Schatzyki_Ducatenzeiler.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -15,6 +14,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Grupo grupo = new Grupo();
+        ViewBag.Datos = grupo.devolverIntegrantes();
+        return View();
+    }
+
+    public IActionResult infoIntegrante(int dni)
+    {
+        Grupo grupo = new Grupo();
+        Integrante integrante = grupo.getIntegrante(dni);
+        ViewBag.Integrante = integrante;
         return View();
     }
 
