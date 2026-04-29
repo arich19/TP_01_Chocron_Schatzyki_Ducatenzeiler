@@ -33,7 +33,7 @@ private void CargaDatosManual()
     interesesTobi.Add("jugar a la compu");
     interesesTobi.Add("ver series");
     interesesTobi.Add("escuchar musica");
-    dicIntegrantes.Add(49880088, new Integrante(49980088, new DateTime(2010, 1, 1), "/img/Lucas.png", "Lucas", familiaLucas, interesesLucas));
+    dicIntegrantes.Add(49980088, new Integrante(49980088, new DateTime(2010, 1, 1), "/img/Lucas.png", "Lucas", familiaLucas, interesesLucas));
     dicIntegrantes.Add(49628292, new Integrante(49628292, new DateTime(2009, 7, 19), "/img/Chocron.png", "Ari", familiaAri, interesesAri));
     dicIntegrantes.Add(50104466, new Integrante(50104466, new DateTime(2010, 2, 3), "/img/Tobi.png", "Tobi", familiaTobi, interesesTobi));
 }

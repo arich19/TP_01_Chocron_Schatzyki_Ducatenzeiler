@@ -1,4 +1,10 @@
 <p> @ViewBag.Integrante.getNombre() </p>
 <p> @ViewBag.Integrante.getDni() </p>
 <p> @ViewBag.Integrante.getFechaNacimiento() </p>
-<p> @ViewBag.Integrante.getFoto() </p>
+<img src="@ViewBag.Integrante.getFoto()" alt="Foto de @ViewBag.Integrante.getFoto()" />
+@foreach (string familia in ViewBag.Integrante.getListaFamiliares()){
+    <p>@familia</p>
+}
+@foreach (string intereses in ViewBag.Integrante.getListaIntereses()){
+    <p>@intereses</p>
+}
