@@ -12,7 +12,7 @@ public class Integrante{
         fechaNacimiento = fechaNacimiento2;
         foto = foto2;
         listaFamiliares = listaFamiliares2;
-        listaIntereses = listaIntereses;
+        listaIntereses = listaIntereses2;
     } 
     public int getDni(){
         return DNI;
